@@ -3,15 +3,18 @@
 file = open('specialchars.txt','r')
 
 file2=file.read()
-for i in file2:
+e=True
+while(e):
+    str = file2[random.randint(0,len(file2))]
     if((i==" ")or(i=="\n")):
         continue
     else:
-        print(i)
-    while(True):
-        e = input("Type here: ")
-        if(e==i):
-            break
+        print("Type this: ",str)
+        var= input()
+        if(var==str):
+            continue
         else:
-            print("Wrong input!")
-            print("Enter again")
+            print("Wrong input!\nTry again or type 'NO' for exit.")
+            var2= input()
+            if(var2=="NO"):
+                e=False
