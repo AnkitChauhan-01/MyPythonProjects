@@ -1,0 +1,10 @@
+#Python program to practice file handling concepts.
+
+#Creating a text file named exp in write mode.
+file = open('exp.txt','w')
+good= file.write("This is first line.\n")
+good= file.write("This is second line.\n")
+good= file.write("This is third line.\n")
+
+#Closing file.
+file.close()
