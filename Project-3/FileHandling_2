@@ -1,0 +1,27 @@
+#Reading contents of a file.
+#readline() function will pick one line at once.
+file2= open('exp.txt','r')
+line= file2.readline()
+print(line)
+line= file2.readline()
+print(line)
+line= file2.readline()
+print(line)
+
+#reading contents by specifying size
+len= file2.read(4)
+print(len)
+len= file2.read(13)
+print(len)
+len= file2.read(17)
+print(len)
+
+#reading contents using readlines() function
+#readlines() function creates a list containing the lines of text file as it's elements.
+len= file2.readlines()
+print(len[2])
+print(len[1])
+print(len[0])
+
+#closing file
+file2.close()
