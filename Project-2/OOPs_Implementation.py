@@ -1,10 +1,11 @@
 '''In this program, I have implemented OOPs concept to keep record of different types of vehicles.'''
 class Vehicle:
-    # Setting up class attributes(variables):
-    type="Car"
-    mileage="20kmpl"
-    colour="Red"
-    company="TATA"
+    # Setting up attributes using constructor:
+    def __init__(self, typ, milg, clr, cpy):
+        self.type="Car"
+        self.mileage="20kmpl"
+        self.colour="Red"
+        self.company="TATA"
 
     # Setting up class methods:
 
@@ -25,39 +26,19 @@ class Vehicle:
         print(f"The vehicle is of type {self.type} which is of colour {self.colour} and gives mileage of {self.mileage} and is of {self.company} company.")
 
 # Creating object 1:
-Vehicle1= Vehicle()
-Vehicle1.type="Bike"
-Vehicle1.mileage="60kmpl"
-Vehicle1.colour="Yellow"
-Vehicle1.company="Hero"
+Vehicle1= Vehicle("Bike","60kmpl","Yellow","Hero")
 
 # Creating object 2:
-Vehicle2= Vehicle()
-Vehicle2.type="Truck"
-Vehicle2.mileage="16kmpl"
-Vehicle2.colour="Orange"
-Vehicle2.company="Mahindra"
+Vehicle2= Vehicle("Truck","16kmpl","Orange","Mahindra")
 
 # Creating object 3:
-Vehicle3= Vehicle()
-Vehicle3.type="E-Rickshaw"
-Vehicle3.mileage="70km per charge"
-Vehicle3.colour="White"
-Vehicle3.company="Ceeon"
+Vehicle3= Vehicle("E-Rickshaw","70km per charge","White","Ceeon")
 
 # Creating object 4:
-Vehicle4= Vehicle()
-Vehicle4.type="Van"
-Vehicle4.mileage="22kmpl"
-Vehicle4.colour="White"
-Vehicle4.company="Maruti"
+Vehicle4= Vehicle("Van","22kmpl","White","Maruti")
 
 # Creating object 5:
-Vehicle5= Vehicle()
-Vehicle5.type="Tempo"
-Vehicle5.mileage="24kmpl"
-Vehicle5.colour="Yellow and Black"
-Vehicle5.company="Force Motors Ltd."
+Vehicle5= Vehicle("Tempo","24kmpl","Yellow and Black","Force Motors Ltd.")
 
 #Calling methods
 Vehicle1.vehichleType()
